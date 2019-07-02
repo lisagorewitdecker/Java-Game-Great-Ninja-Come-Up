@@ -53,14 +53,11 @@ When ready to Merge feature branch into master. Click the 'Merge' button and let
 
 Try to make your feature branch as short and descriptive as you can be. If you have to refactor due to your change(s), create one feature branch for refactoring, another that will build on it.
 
-## Deployment
+## Video Walkthrough
 Coming Soon...
 
 ## Built With
 Java, STS, JSP, CSS, JavaScript, Adobe Creative Suite
-
-## Contributing
-David L. Chandler
 
 ## Versioning 
 1.0
