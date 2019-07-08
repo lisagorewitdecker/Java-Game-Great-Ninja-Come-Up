@@ -36,7 +36,7 @@ You will also need Spring Tool Suite 4 (again, download based on your operating 
 Please See Above...
 
 ### Installing
-The source code can be found at <a href="https://github.com/lisagorewitdecker/Great_Ninja_Come_Up_Java.git">https://github.com/lisagorewitdecker/Great_Ninja_Come_Up_Java.git</a>.
+The source code can be found at <a href="https://github.com/songey/Great_Ninja_Come_Up_Java.git">https://github.com/songey/Great_Ninja_Come_Up_Java.git</a>.
 
 How to clone/initialize repository:<br>
 <b>git clone</b>
