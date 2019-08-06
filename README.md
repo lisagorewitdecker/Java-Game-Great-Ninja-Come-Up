@@ -1,3 +1,6 @@
+## License
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # Great Ninja Come Up Java Game
 Game developed in Spring Tool Suite 4 using Java v8. Responsive, Pac-Man inspired game with a ninja theme.
 Developed by Brent Songey and Lisa Gorewit-Decker.
@@ -80,6 +83,3 @@ Java, STS, JSP, CSS, JavaScript, Adobe Creative Suite
 
 ## Authors
 Brent Songey, Lisa Gorewit-Decker
-
-## License
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
