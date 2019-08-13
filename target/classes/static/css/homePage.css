@@ -1,0 +1,45 @@
+body{
+  	background-image: url('../img/dojo.jpg');
+  	background-size:cover;
+  	background-attachment:fixed
+}
+* {
+	color:white;
+}
+.ninjaName{
+	font-family: 'Kaushan Script', cursive;
+	color:white;
+}
+[type="submit"]{
+	color:red;
+}
+.phrase{
+	font-family:cursive;
+}
+.message_board{
+	margin-top:14px;
+	background-color:beige;
+	color:black;
+	font-family:cursive;
+	text-align:center;
+	border:1.5px solid brown;
+	border-top-right-radius:10px;
+	border-top-left-radius:10px;
+	min-width:300px;
+	min-height:150px;
+	opacity:0.5;
+	font-size:22px;
+	color:black;
+}
+.marron{
+	color:brown;
+}
+.ninja{
+	display:inline-block;
+	margin: 15px;
+	background-color:marron;
+}
+.flame{
+	width:75;
+	height:75px;
+}
