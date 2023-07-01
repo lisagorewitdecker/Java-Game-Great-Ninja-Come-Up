@@ -3,7 +3,7 @@
 
 # Great Ninja Come Up Java Game
 Game developed in Spring Tool Suite 4 using Java v8. Responsive, Pac-Man inspired game with a ninja theme.
-Developed by Brent Songey and Lisa Gorewit-Decker.
+Developed by Lisa Gorewit-Decker and Brent Songey.
 
 ## Getting Started
 Download <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java JDK 8(u211)</a>, choose which installation type (tar, zip, dmg) based on your operating system. Download Apache Tomcat 8 version 8.5.15 from this link: <a href="http://tomcat.apache.org/download-80.cgiApache"> Tomcat Download</a>.
@@ -45,7 +45,7 @@ How to clone/initialize repository:<br>
 <b>git clone</b>
 
 Create a feature branch and push to it. You can do a remote commit with the following:<br>
-<b>git checkout master</b><br>
+<b>git checkout main</b><br>
 <b>git pull</b><br>
 <b>git checkout -b your_feature_branch_goes_here</b><br>
 Make your edits
@@ -65,10 +65,10 @@ To commit: <br>
 <b>git commit --all</b><br>
 <b>git push origin your_feature_branch_goes_here</b><br>
 
-Then navigate to the pull requests page at github.com within the repository and choose <b>New pull request</b> in order to create a request to merge your feature branch into master.<br>
+Then navigate to the pull requests page at github.com within the repository and choose <b>New pull request</b> in order to create a request to merge your feature branch into mmain.<br>
 
-When you are ready to Merge your feature branch into master, click the <b>Merge</b> button and let the github website perform the actual change to master. You can then close the source branch on github and delete your local branch with:<br>
-<b>git checkout master && git pull && git branch -d your_feature_branch_goes_here</b>
+When you are ready to Merge your feature branch into main, click the <b>Merge</b> button and let the github website perform the actual change to main. You can then close the source branch on github and delete your local branch with:<br>
+<b>git checkout main && git pull && git branch -d your_feature_branch_goes_here</b>
 
 Try to make your feature branch as short and descriptive as you can be. If you have to refactor due to your change(s), create one feature branch for refactoring, another that will build on it.
 
@@ -82,4 +82,4 @@ Java, STS, JSP, CSS, JavaScript, Adobe Creative Suite
 1.0
 
 ## Authors
-Brent Songey, Lisa Gorewit-Decker
+Lisa Gorewit-Decker and Brent Songey
