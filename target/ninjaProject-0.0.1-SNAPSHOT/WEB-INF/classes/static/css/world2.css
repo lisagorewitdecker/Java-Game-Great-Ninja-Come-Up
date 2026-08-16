@@ -1,0 +1,127 @@
+*{
+     margin:0;
+     padding:0;
+ }
+ body{
+ 	background-color:black;
+ }
+ div.row{
+     line-height:0;
+ }
+ .level2{
+ 	background-color:transparent;
+ 	border-top-left-radius:10%;
+ 	border-top-right-radius:3%;
+ 	border-bottom-right-radius:10%;
+ }
+ div.wall{
+     background-color:black;
+     height:40px;
+     width:40px;
+     display:inline-block;
+ }
+ div.blank{
+     background-color:gray;
+     height:40px;
+     width:40px;
+     display:inline-block;
+ }
+ div.flame{
+     background-color:gray;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-image: url('../img/flame.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ .jail{
+	 background-image: url('../img/jail.jpg');
+	 background-color:black;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ .skeleton{
+	 background-image: url('../img/skeleton.jpg');
+	 background-color:black;
+     height:40px;
+     width:80px;
+     display:inline-block;
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ .skeleton2{
+	 background-image: url('../img/skeleton2.jpg');
+	 background-color:black;
+     height:40px;
+     width:80px;
+     display:inline-block;
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ div.blackFlame{
+     background-color:black;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-image: url('../img/flame.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ div.bones{
+     background-color:transparent;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-image: url('../img/bones.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ div.skull{
+     background-color:transparent;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-image: url('../img/skull2.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ div.silverPiece{ 
+     background-color:gray;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-image: url('../img/silver.jpg');
+     background-size:contain;
+     background-repeat:no-repeat;
+ }
+ #ninja{
+     background-color:transparent;
+     height:40px;
+     width:40px;
+     display:inline-block;
+     background-image: url('../img/down1.png');
+     background-repeat:no-repeat;
+     background-size:contain;
+     position:absolute;
+     left:40px;
+     top:40px;
+ }
+ .gold, .silver, .health{
+ 	text-align:center;
+ 	height:75px;
+ 	width:75px;
+ 	background-color:beige;
+ 	border:1px solid black;
+ 	margin-left:30px;
+ 	margin-top:10px;
+ 	border-top-right-radius:10%;
+ 	border-bottom-left-radius:10%;
+ }
+ #world, .gold, .silver, .health{
+ 	display:inline-block;
+ 	vertical-align:top;	
+ }
