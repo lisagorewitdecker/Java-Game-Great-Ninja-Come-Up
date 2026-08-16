@@ -19,6 +19,7 @@
 		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jackson-bom.version>2.18.9</jackson-bom.version>
+		<json-smart.version>2.6.0</json-smart.version>
 		<spring-framework.version>6.1.20</spring-framework.version>
 	</properties>
 
@@ -92,9 +93,9 @@
 			<version>1.5.37</version>
 		</dependency>
 		<dependency>
-  			<groupId>com.jayway.jsonpath</groupId>
-  			<artifactId>json-path</artifactId>
-  			<version>2.9.0</version>
+			<groupId>com.jayway.jsonpath</groupId>
+			<artifactId>json-path</artifactId>
+			<version>3.0.0</version>
 		</dependency>
 	</dependencies>
 
