@@ -20,7 +20,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jackson-bom.version>2.18.9</jackson-bom.version>
 		<json-smart.version>2.6.0</json-smart.version>
-		<spring-framework.version>6.1.20</spring-framework.version>
+		<spring-framework.version>6.1.21</spring-framework.version>
 	</properties>
 
 	<dependencies>
