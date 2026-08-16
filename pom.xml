@@ -19,14 +19,10 @@
 		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jackson-bom.version>2.18.9</jackson-bom.version>
+		<spring-framework.version>6.1.20</spring-framework.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-  			<groupId>org.springframework</groupId>
-  			<artifactId>spring-context</artifactId>
-  			<version>6.1.20</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
