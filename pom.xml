@@ -55,9 +55,10 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-  			<groupId>org.apache.tomcat.embed</groupId>
-  			<artifactId>tomcat-embed-core</artifactId>
-  			<version>[10.1.45,)</version>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-core</artifactId>
+			<version>10.1.45</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.glassfish.web</groupId>
