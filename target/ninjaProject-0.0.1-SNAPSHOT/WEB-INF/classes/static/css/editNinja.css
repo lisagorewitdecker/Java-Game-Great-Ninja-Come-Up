@@ -1,0 +1,28 @@
+.white {
+   color:white;
+} 
+body{
+   background-image: url('../img/dojo.jpg');
+   background-size:cover;
+   background-attachment:fixed
+}
+.title{
+	color:white;
+}
+[type="submit"]{
+ 	color:black;
+ 	background-color:beige;
+}
+.error{
+ 	color:red;
+}
+.img{
+ 	height:201px;
+ 	width:100px;
+ 	margin-left:45px;
+ 	margin-bottom:15px;
+}
+ form, .img{
+ 	display:inline-block;
+ 	vertical-align:top;
+}

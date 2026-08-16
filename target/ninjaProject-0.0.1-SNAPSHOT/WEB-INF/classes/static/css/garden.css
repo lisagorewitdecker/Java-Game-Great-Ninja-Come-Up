@@ -1,0 +1,27 @@
+body{
+    background-image: url('../../img/garden.jpg');
+    background-size:cover;
+    background-attachment:fixed
+}
+.img{
+	width:101px;
+	height:200px; 
+	margin-top:27%;
+	margin-left:37%;
+}
+h2{
+	color:white;
+	display:inline-block;
+	margin-left:35px;
+}
+.world{
+	color:magenta;
+	margin-left:20px;
+}
+.name{
+	font-family:cursive;
+	font-size:50px;
+	color:magenta;
+	text-decoration:underline;
+	display:inline-block;
+}
