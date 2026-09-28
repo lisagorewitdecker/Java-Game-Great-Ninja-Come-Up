@@ -82,4 +82,4 @@ Java, STS, JSP, CSS, JavaScript, Adobe Creative Suite
 1.0
 
 ## Authors
-Lisa Gorewit-Decker and Brent Songey
+Lisa M Gorewit-Decker
