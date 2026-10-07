@@ -18,7 +18,7 @@
 	<properties>
 		<java.version>17</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<jackson-bom.version>2.21.4</jackson-bom.version>
+		<jackson-bom.version>2.21.7</jackson-bom.version>
 		<json-smart.version>2.6.0</json-smart.version>
 		<spring-framework.version>6.2.19</spring-framework.version>
 	</properties>
