@@ -10,6 +10,8 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Size;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -21,13 +23,15 @@ public class Ninja {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Size(min=1, message="Name must be filled in")
+	@NotBlank(message="Name must be filled in")
+	@Size(max=50, message="Name must be under 50 characters")
 	private String name;
 	
-	@Size(min=1, message="Color must be filled in")
+	@NotBlank(message="Color must be filled in")
+	@Pattern(regexp="red|green|blue|purple", message="Choose a valid color")
 	private String color;
 	
-	@Size(min=1, message="Please add an expression")
+	@NotBlank(message="Please add an expression")
 	@Size(max=50, message="Messages under 50")
 	private String expression;
 	

@@ -8,6 +8,10 @@ Developed by Lisa Gorewit-Decker and Brent Songey.
 ## Getting Started
 Download <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Java JDK 8(u211)</a>, choose which installation type (tar, zip, dmg) based on your operating system. Download Apache Tomcat 8 version 8.5.15 from this link: <a href="http://tomcat.apache.org/download-80.cgiApache"> Tomcat Download</a>.
 
+Configure the database credentials using the `DB_USERNAME` and `DB_PASSWORD`
+environment variables before starting the application. Do not put database
+passwords in `application.properties` or commit them to the repository.
+
 Create a new folder named <b>servlets</b> and have Spring Tool Suite as a working directory.
 Add Apache Tomcat as one of our run time environments.
 
