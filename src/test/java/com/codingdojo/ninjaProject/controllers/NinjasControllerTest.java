@@ -1,8 +1,9 @@
 package com.codingdojo.ninjaProject.controllers;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mock;
+
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.MutablePropertyValues;
@@ -32,6 +33,7 @@ class NinjasControllerTest {
 		assertEquals(10, ninja.getGold());
 		assertEquals(20, ninja.getSilver());
 		assertEquals("Updated", ninja.getName());
-		assertArrayEquals(new String[] {"id", "gold", "silver"}, binder.getSuppressedFields());
+		assertEquals(Set.of("id", "gold", "silver"),
+				Set.of(binder.getBindingResult().getSuppressedFields()));
 	}
 }
