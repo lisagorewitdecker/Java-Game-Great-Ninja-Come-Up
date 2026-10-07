@@ -1,0 +1,6 @@
+com/codingdojo/ninjaProject/NinjaProjectApplication.class
+com/codingdojo/ninjaProject/controllers/Ninjas.class
+com/codingdojo/ninjaProject/models/Ninja.class
+com/codingdojo/ninjaProject/repositories/NinjaRepo.class
+com/codingdojo/ninjaProject/ServletInitializer.class
+com/codingdojo/ninjaProject/services/NinjaService.class
