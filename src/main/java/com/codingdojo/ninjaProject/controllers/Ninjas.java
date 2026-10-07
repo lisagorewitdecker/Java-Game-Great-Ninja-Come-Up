@@ -1,9 +1,10 @@
 package com.codingdojo.ninjaProject.controllers;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -16,22 +17,30 @@ import com.codingdojo.ninjaProject.services.NinjaService;
 
 @Controller
 public class Ninjas {
-	@Autowired
-	private NinjaService ninjaService;
+	private final NinjaService ninjaService;
+
+	public Ninjas(NinjaService ninjaService) {
+		this.ninjaService = ninjaService;
+	}
+
+	@InitBinder("ninja")
+	public void initNinjaBinder(WebDataBinder binder) {
+		binder.setAllowedFields("name", "color", "expression");
+	}
 	
-@RequestMapping("/")
+@GetMapping("/")
 	public String welcomePage(){
 		return "welcome.jsp";
 }
 
-@RequestMapping("/homePage")
+@GetMapping("/homePage")
 	public String homePage(Model model){
 	
 		model.addAttribute("ninjas", ninjaService.getAllNinjas());		
 		return "homePage.jsp";
 }
 
-@RequestMapping("/createNinja")
+@GetMapping("/createNinja")
 	public String goCreateNinja(@ModelAttribute("ninja") Ninja ninja){
 		
 		return "createNinja.jsp";
@@ -69,7 +78,7 @@ public class Ninjas {
 }	
 	
 @PutMapping("/ninjas/{id}")
-	public String updateNinja(@Valid @ModelAttribute("ninja") Ninja ninja, BindingResult result){
+	public String updateNinja(@PathVariable("id") Long id, @Valid @ModelAttribute("ninja") Ninja ninja, BindingResult result){
 	
 		if(result.hasErrors()) {
 				
@@ -77,7 +86,7 @@ public class Ninjas {
 			}
 		else 
 			{
-				ninjaService.createNinja(ninja);
+				ninjaService.updateNinja(id, ninja);
 				return "redirect:/homePage";
 			}
 }
@@ -89,7 +98,7 @@ public class Ninjas {
 		return "redirect:/homePage";
 }
 
-@RequestMapping("/world/{id}")
+@GetMapping("/world/{id}")
 	public String worldOne(@PathVariable("id") Long id, Model model){
 	
 	Ninja ninja = ninjaService.getOneNinja(id);
@@ -99,7 +108,7 @@ public class Ninjas {
 }
 //////////   ////////// /////////// ////////////
 //////////////////// /////////// ////////////
-@RequestMapping("/world2/{id}")
+@GetMapping("/world2/{id}")
 	public String worldTwo(@PathVariable("id") Long id, Model model){
 	
 		Ninja ninjaMan = ninjaService.getOneNinja(id);
@@ -109,7 +118,7 @@ public class Ninjas {
 		
 }
 
-@RequestMapping("/world3/{id}")
+@GetMapping("/world3/{id}")
 	public String worldThree(@PathVariable("id") Long id, Model model){
 	
 		Ninja ninjaMan = ninjaService.getOneNinja(id);

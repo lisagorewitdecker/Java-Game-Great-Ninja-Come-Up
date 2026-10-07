@@ -2,8 +2,9 @@ package com.codingdojo.ninjaProject.services;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.codingdojo.ninjaProject.models.Ninja;
 import com.codingdojo.ninjaProject.repositories.NinjaRepo;
@@ -12,8 +13,7 @@ import com.codingdojo.ninjaProject.repositories.NinjaRepo;
 @Service
 public class NinjaService {
 	
-	@Autowired
-	private  NinjaRepo ninjaRepo;
+	private final NinjaRepo ninjaRepo;
 	
 	public NinjaService (NinjaRepo ninjaRepo) {
 		
@@ -29,6 +29,14 @@ public class NinjaService {
 		
 		ninjaRepo.save(ninja);
 	}
+
+	public Ninja updateNinja(Long id, Ninja updates) {
+		Ninja ninja = getOneNinja(id);
+		ninja.setName(updates.getName());
+		ninja.setColor(updates.getColor());
+		ninja.setExpression(updates.getExpression());
+		return ninjaRepo.save(ninja);
+	}
 ///////////////////////////////////////////////////
 ///////////////////////////////////////////////////
 	
@@ -38,11 +46,7 @@ public class NinjaService {
 		
 		Optional <Ninja> optional = ninjaRepo.findById(id);
 		
-		if(optional.isPresent()) {
-			return optional.get();
-		}else {			
-			return null;
-		}
+		return optional.orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
 	}
 	
 	public void deleteNinjaById(Long id) {
